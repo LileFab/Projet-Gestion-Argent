@@ -5,6 +5,12 @@ export default class Income extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare userId: String
+
+  @column()
+  declare typeId: String
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 
